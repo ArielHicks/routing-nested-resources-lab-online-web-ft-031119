@@ -14,6 +14,7 @@ end
 
 
   def show
+    if params[:artist_id]
     @song = Song.find(params[:id])
   end
 
